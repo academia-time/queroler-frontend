@@ -1,6 +1,6 @@
 export interface BookCardProps {
   title: string;
-  author: string;
+  author?: string;
   cover: string;
   id: string;
   editora?: string;

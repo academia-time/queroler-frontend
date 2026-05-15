@@ -38,7 +38,14 @@ export function BookSection({
 
       <div className="flex gap-4 overflow-x-auto pb-2 min-h-[120px]">
         {livros && livros.length > 0 ? (
-          livros.map((livro) => <BookCard key={livro.id} {...livro} />)
+          livros.map((livro) => (
+            <div
+              key={livro.id}
+              className="w-[140px] lg:w-[180px] flex-shrink-0"
+            >
+              <BookCard {...livro} />
+            </div>
+          ))
         ) : (
           <p className="text-text-secondary text-sm self-center">
             Nenhum livro ainda.
