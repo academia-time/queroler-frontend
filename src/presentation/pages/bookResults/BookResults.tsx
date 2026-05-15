@@ -2,11 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { mockSearchResults21 } from '@/presentation/shared/components/searchBar/mockSearchResults';
-<<<<<<< feat/adiciona-animacoes-de-hover
 import { DetailedBookCard } from '@/presentation/shared/components/detailedBookCard/DetailedBookCard';
-=======
 import { Header } from '@/presentation/shared/components/header/header';
->>>>>>> feat/tela-leitura
 
 interface Livro {
   avaliacao?: number;
