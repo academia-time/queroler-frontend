@@ -5,25 +5,33 @@ import TelaInicialElemento from '../elements/tela-inicial-elemento.cy';
 const telaInicialElemento = new TelaInicialElemento();
 
 class TelaInicialPage {
-  nomeUsuario() {
-    cy.get(telaInicialElemento.nomeDoUsuarioBotao(), { timeout: 10000 })
+  abreMenuUsuario() {
+    cy.get(telaInicialElemento.menuUsuarioBotao(), { timeout: 10000 })
       .should('be.visible')
       .click({ force: true });
   }
 
-  sair() {
-    cy.get('.Toastify__close-button').should('be.visible').click().click();
-    cy.get(telaInicialElemento.sairBotao()).should('be.visible');
+  realizaLogout(mensagem) {
+    cy.get(telaInicialElemento.fechaToastBotao()).should('be.visible').click();
+    cy.get(telaInicialElemento.sairBotao()).should('be.visible').click();
+    cy.get(telaInicialElemento.toastNotificacao())
+      .should('be.visible')
+      .contains(mensagem);
   }
 
-  tituloQueroLer() {
-    const titulo = 'QueroLer';
-    cy.title().should('contain', titulo);
+  validaToastMensagem(mensagem) {
+    cy.get(telaInicialElemento.toastNotificacao())
+      .should('be.visible')
+      .contains(mensagem);
   }
 
-  sino() {
-    cy.get('.Toastify__close-button').should('be.visible').click();
-    cy.get(telaInicialElemento.sinoIcone()).should('be.visible');
+  validaLogoVisivel() {
+    cy.get(telaInicialElemento.logoQueroLerImagem()).should('be.visible');
+  }
+
+  validaSinoVisivel() {
+    cy.get(telaInicialElemento.fechaToastBotao()).should('be.visible').click();
+    cy.get(telaInicialElemento.notificacaoSinoBotao()).should('be.visible');
   }
 }
 

@@ -13,10 +13,10 @@ interface Livro {
   capaUrl: string | null;
 }
 
-interface RespostaBack {
-  content: Livro[];
-  totalElements: number;
-}
+//interface RespostaBack {
+//  content: Livro[];
+//  totalElements: number;
+//}
 
 export function PopularBooks() {
   const [livros, setLivros] = useState<Livro[]>([]);
@@ -70,7 +70,7 @@ export function PopularBooks() {
 
       <FieldError message={erro} />
 
-      <div className="grid grid-cols-5 gap-4">
+      <div className="flex gap-4 overflow-x-auto pt-2 pb-3 pl-2 custom-scroll">
         {livros.slice(0, 5).map((livro) => (
           <BookCard
             key={livro.id}

@@ -5,6 +5,10 @@ import LoginElemento from '../elements/login-elemento.cy';
 const loginElemento = new LoginElemento();
 
 class LoginPage {
+  bemVindoTexto() {
+    cy.get(loginElemento.bemVindoTexto()).should('be.visible');
+  }
+
   email(email) {
     cy.get(loginElemento.emailCampo())
       .should('be.visible')
@@ -20,12 +24,12 @@ class LoginPage {
     cy.get(loginElemento.entrarBotao()).should('be.visible').click();
   }
 
-  mensagemInvalidoEmail() {
-    cy.get(loginElemento.emailInvalidoMensagem()).contains('E-mail inválido');
+  mensagemInvalidoEmail(mensagem) {
+    cy.get(loginElemento.erroMensagem()).contains(mensagem);
   }
 
-  cadastre() {
-    cy.get(loginElemento.cadastreLink()).should('be.visible').click();
+  cadastreSe() {
+    cy.get(loginElemento.cadastreSeLink()).should('be.visible').click();
   }
 }
 

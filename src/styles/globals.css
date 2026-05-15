@@ -74,3 +74,14 @@ body {
   color: var(--color-foreground);
   font-family: 'Plus Jakarta Sans', var(--font-layout-display), sans-serif;
 }
+
+.custom-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 99px;
+}

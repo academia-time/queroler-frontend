@@ -5,16 +5,14 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { BookOpen } from 'lucide-react';
 import { useAuth } from '@/presentation/shared/lib/auth-context';
+<<<<<<< feat/adiciona-animacoes-de-hover
+=======
 import { useRouter } from 'next/navigation';
+>>>>>>> feat/tela-leitura
 
 export function Header() {
   const { logout } = useAuth();
   const [menuOpen, setIsMenuOpen] = useState(false);
-  const router = useRouter();
-
-  function handleLogout() {
-    router.push('/login');
-  }
 
   return (
     <header className="w-full flex items-center justify-between px-4 py-3 lg:px-8 lg:py-4 bg-color-background border-b border-border">

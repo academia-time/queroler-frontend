@@ -1,9 +1,9 @@
 name: CI (Integração Contínua)
 on:
   pull_request:
-    branches: [master, dev]
+    branches: [master, develop]
   push:
-    branches: [master, dev]
+    branches: [master, develop]
 
 jobs:
   build:
@@ -33,10 +33,11 @@ jobs:
 
       - name: Gerar Build Final
         run: npm run build
-
       - name: Criar cypress.env.json
         run: |
           echo '{
-            "user_name": "${{ secrets.CYPRESS_user_email }}",
-            "user_password": "${{ secrets.CYPRESS_user_senha }}"
+            "user_email": "${{ secrets.CYPRESS_user_email }}",
+            "user_senha": "${{ secrets.CYPRESS_user_senha }}"
           }' > cypress.env.json
+      - name: Rodar testes Cypress
+        run: npm run test:e2e:all

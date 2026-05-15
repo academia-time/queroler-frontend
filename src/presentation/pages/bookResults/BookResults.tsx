@@ -1,11 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { BookCard } from '@/presentation/shared/components/bookCard/BookCard';
 import { mockSearchResults21 } from '@/presentation/shared/components/searchBar/mockSearchResults';
+<<<<<<< feat/adiciona-animacoes-de-hover
+import { DetailedBookCard } from '@/presentation/shared/components/detailedBookCard/DetailedBookCard';
+=======
 import { Header } from '@/presentation/shared/components/header/header';
+>>>>>>> feat/tela-leitura
 
 interface Livro {
+  avaliacao?: number;
+  numeroDeLeitores?: number;
   id: string;
   titulo: string;
   autores: { nome: string }[];
@@ -20,15 +25,15 @@ interface BookResultsProps {
   filtro: string;
 }
 
-interface RespostaBack {
-  content: Livro[];
-  totalElements: number;
-}
+//interface RespostaBack {
+//  content: Livro[];
+//  totalElements: number;
+//}
 
 export function BookResults({ query, filtro }: BookResultsProps) {
   const [livros, setLivros] = useState<Livro[]>([]);
   const [paginaAtual, setPaginaAtual] = useState(1);
-  const [erro, setErro] = useState('');
+  const [_erro, setErro] = useState('');
   const itensPorPagina = 15;
 
   useEffect(() => {
@@ -108,7 +113,7 @@ export function BookResults({ query, filtro }: BookResultsProps) {
         </button>
 
         <span className="text-text-primary text-lg font-semibold">
-          Resultados para "{query}"
+          Resultados para {query}
         </span>
 
         <div />
@@ -122,17 +127,19 @@ export function BookResults({ query, filtro }: BookResultsProps) {
 
       {livros.length > 0 && (
         <>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  relative hover:z-10 transition-all duration-200 cursor-pointer hover:shadow-md hover:scale-[1.02] hover:-translate-y-1">
             {livrosPaginados.map((livro) => (
-              <BookCard
+              <DetailedBookCard
                 key={livro.id}
                 id={livro.id}
                 title={livro.titulo}
-                author={livro.autores?.[0]?.nome || ''}
+                author={livro.autores.map((autor) => autor.nome).join(', ')}
                 cover={livro.capaUrl || ''}
-                editora={livro.editora}
-                numeroDePaginas={livro.numeroDePaginas}
-                anoDePublicacao={livro.anoDePublicacao}
+                publisher={livro.editora || ''}
+                rating={livro.avaliacao || 0}
+                pages={livro.numeroDePaginas}
+                year={parseInt(livro.anoDePublicacao) || 0}
+                readers={livro.numeroDeLeitores || 0}
               />
             ))}
           </div>

@@ -1,8 +1,10 @@
 class TelaInicialElemento {
-  nomeDoUsuarioBotao = () => '[data-testid="user-menu-trigger"]';
+  menuUsuarioBotao = () => '[data-testid="user-menu-trigger"]';
   sairBotao = () => '[data-testid="logout-button"]';
-  queroLerTitulo = () => '[alt="Quero Ler"]';
-  sinoIcone = () => '[data-testid="bell-icon"]';
+  logoQueroLerImagem = () => '[alt="Quero Ler"]';
+  notificacaoSinoBotao = () => '[data-testid="bell-icon"]';
+  fechaToastBotao = () => '.Toastify__close-button';
+  toastNotificacao = () => '.Toastify__toast';
 }
 
 export default TelaInicialElemento;
