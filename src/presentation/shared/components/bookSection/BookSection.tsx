@@ -36,7 +36,7 @@ export function BookSection({
         </span>
       </div>
 
-      <div className="flex gap-4 overflow-x-auto pb-2 min-h-[120px]">
+      <div className="flex gap-6 overflow-x-auto pb-2 min-h-[120px]">
         {livros && livros.length > 0 ? (
           livros.map((livro) => (
             <div

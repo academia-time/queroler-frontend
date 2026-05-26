@@ -15,7 +15,10 @@ export function BookCard({ title, author, cover, id }: BookCardProps) {
           <Image
             src={cover}
             alt={title}
-            className="w-full h-[120px] lg:h-[170px] object-cover rounded-t-xl"
+            //className="w-full h-[120px] lg:h-[170px] object-cover rounded-t-xl"
+            fill
+            sizes="(max-width: 768px) 140px, 200px"
+            className="object-cover rounded-t-xl"
           />
         ) : (
           <div className="w-full h-[120px] lg:h-[170px] bg-border flex flex-col items-center justify-center gap-2 rounded-t-xl">

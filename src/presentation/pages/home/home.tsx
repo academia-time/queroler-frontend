@@ -86,7 +86,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 px-4 py-6 lg:px-8">
+      <main className="flex-1 max-w-7xl mx-auto px-4 py-6 lg:px-8">
         <h1 className="text-text-primary text-2xl lg:text-3xl font-bold mb-1">
           Leituras atuais, desejadas e passadas
         </h1>
