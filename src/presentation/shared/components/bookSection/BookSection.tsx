@@ -33,7 +33,7 @@ export function BookSection({
         </span>
       </div>
 
-      <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 min-h-[120px]">
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 min-h-[120px] min-w-0">
         {livros && livros.length > 0 ? (
           livros
             ?.slice(0, 4)
