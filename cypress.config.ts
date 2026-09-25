@@ -1,6 +1,6 @@
 import { defineConfig } from 'cypress';
 import allureWriter from '@shelex/cypress-allure-plugin/writer';
-import { fsTasks } from '@/../cypress/tasks/fsTasks';
+import { fsTasks } from '@/cypress/tasks/fsTasks';
 
 export default defineConfig({
   e2e: {
