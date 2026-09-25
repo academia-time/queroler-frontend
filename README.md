@@ -193,7 +193,7 @@ O projeto segue uma organização inspirada em Clean Architecture para separar r
 ### Cypress (`cypress.config.ts`)
 
 - `baseUrl`: `http://localhost:3000`
-- `specPattern`: `e2e/**/*.cy.{js,jsx,ts,tsx}`
+- `specPattern`: `cypress/e2e/**/*.cy.{js,jsx,ts,tsx}`
 - `supportFile`: `cypress/support/e2e.ts`
 
 ## 🪝 Git Hooks (Lefthook)
@@ -221,7 +221,7 @@ Configurado automaticamente ao instalar dependências:
 - Testes unitários junto aos componentes (`.spec.tsx`)
 - Setup customizado via `src/lib/test-utils.tsx`
 - Imports utilizando `@/lib/test-utils` em vez de `@testing-library/react`
-- Testes E2E na raiz em `e2e/**/*.cy.ts`
+- Testes E2E em `cypress/e2e/**/*.cy.{js,jsx,ts,tsx}`
 
 ### Testes E2E (Cypress)
 
@@ -243,21 +243,27 @@ Ou abra a interface do Cypress:
 npm run test:e2e:open
 ```
 
-### Exemplo E2E
-
-- Arquivo: `e2e/example.cy.ts`
-- Cenário atual: acessa `/` e valida o título `Login`
-
-### Exemplo
+### Exemplo de teste unitário
 
 ```tsx
 import { render, screen } from '@/lib/test-utils';
 import MyComponent from './MyComponent';
 
 describe('MyComponent', () => {
-  it('should render', () => {
+  it('deve renderizar', () => {
     render(<MyComponent />);
     expect(screen.getByText('Hello')).toBeInTheDocument();
+  });
+});
+```
+
+### Exemplo de teste E2E com Cypress
+
+```ts
+describe('Home page', () => {
+  it('should render login heading', () => {
+    cy.visit('/');
+    cy.contains('h1', 'Login').should('be.visible');
   });
 });
 ```
