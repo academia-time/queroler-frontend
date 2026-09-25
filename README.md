@@ -2,7 +2,7 @@
 
 Aplicação frontend moderna para a plataforma Quero Ler, construída com as tecnologias mais recentes do ecossistema React/Next.js.
 
-## � Objetivo
+## Objetivo
 
 A plataforma Quero Ler é uma aplicação social dedicada a usuários que desejam adquirir e manter o hábito de leitura. Os principais recursos incluem:
 

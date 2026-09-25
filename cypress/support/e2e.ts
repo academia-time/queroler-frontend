@@ -16,3 +16,4 @@
 // Import commands.js using ES2015 syntax:
 // eslint-disable-next-line no-relative-import-paths/no-relative-import-paths
 import './commands';
+import '@shelex/cypress-allure-plugin';

@@ -34,7 +34,7 @@ export function LoginForm() {
 
   const onSubmit = async (data: LoginDTO) => {
     const result = await loginAction(data);
-
+    console.log(result.data);
     if (!result.success) {
       toast.error(result.message);
       return;

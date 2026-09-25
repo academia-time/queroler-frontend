@@ -43,7 +43,7 @@ describe('Server Actions: createUserAction', () => {
   });
 
   it('deve retornar um erro genérico quando a criação falhar', async () => {
-    mockExecute.mockRejectedValue(new Error('UNKNOWN_ERROR'));
+    mockExecute.mockRejectedValue('UNKNOWN_ERROR');
     const data = createUserPayload();
     const result = await createUserAction(data);
     expect(result.success).toBe(false);

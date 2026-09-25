@@ -10,9 +10,21 @@ export const createUserSchema = z
       .email({ message: 'E-mail inválido' }),
     senha: z
       .string()
-      .min(6, 'Mínimo 6 caracteres')
-      .nonempty('Senha obrigatória'),
-    confirmarSenha: z.string().min(6, 'Confirmação obrigatória'),
+      .nonempty('Senha obrigatória')
+      .min(8, 'Mínimo 8 caracteres')
+      .refine((val) => /[A-Z]/.test(val), {
+        message: 'A senha deve conter pelo menos uma letra maiúscula.',
+      })
+      .refine((val) => /[a-z]/.test(val), {
+        message: 'A senha deve conter pelo menos uma letra minúscula.',
+      })
+      .refine((val) => /\d/.test(val), {
+        message: 'A senha deve conter pelo menos um número.',
+      })
+      .refine((val) => /^.*[@$!%*?&.#_-].*$/.test(val), {
+        message: 'A senha deve conter pelo menos um caractere especial.',
+      }),
+    confirmarSenha: z.string().min(8, 'Confirmação obrigatória'),
     cpf: z.string().min(11, 'CPF obrigatório').max(14, 'CPF inválido'),
     checkTermo: z.literal(true, { message: 'É necessário aceitar os termos' }),
   })

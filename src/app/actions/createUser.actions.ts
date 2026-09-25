@@ -27,20 +27,11 @@ export async function createUserAction(data: CreateUserDTO) {
     await useCase.execute(validated.data);
     revalidatePath('/', 'layout');
   } catch (error) {
-    const errorMessage =
-      error instanceof Error
-        ? error.message
-        : typeof error === 'object' && error !== null && 'error' in error
-          ? String(error.error)
-          : '';
-
     return {
       success: false,
       message:
-        errorMessage.toLowerCase() === 'unauthorized'
-          ? 'Não foi possível criar o usuário. Verifique se o usuário já está cadastrado.'
-          : errorMessage ||
-            'Falha ao criar usuário. Tente novamente mais tarde.',
+        (error as string) ||
+        'Falha ao criar usuário. Tente novamente mais tarde.',
     };
   }
 

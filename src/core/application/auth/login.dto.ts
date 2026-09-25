@@ -8,7 +8,7 @@ export const loginSchema = z.object({
     .email({ message: 'E-mail inválido' }),
   password: z
     .string()
-    .min(6, 'Mínimo 6 caracteres')
+    .min(8, 'Mínimo 8 caracteres')
     .nonempty('Senha obrigatória'),
 });
 

@@ -1,13 +1,24 @@
 import { ReactNode } from 'react';
+import {
+  BookCard,
+  BookCardProps,
+} from '@/presentation/shared/components/bookCard/BookCard';
 
 interface BookSectionProps {
   title: string;
   tag: string;
   tagColor: string;
   icon: ReactNode;
+  livros?: BookCardProps[];
 }
 
-export function BookSection({ title, tag, tagColor, icon }: BookSectionProps) {
+export function BookSection({
+  title,
+  tag,
+  tagColor,
+  icon,
+  livros,
+}: BookSectionProps) {
   return (
     <div className="bg-card-bg border border-border rounded-xl px-4 lg:p-6 py-3 lg:py-6">
       <div className="flex items-center justify-between mb-4">
@@ -25,8 +36,21 @@ export function BookSection({ title, tag, tagColor, icon }: BookSectionProps) {
         </span>
       </div>
 
-      <div className="flex items-center gap-3 min-h-[120px]">
-        <p className="text-text-secondary text-sm">Nenhum livro ainda.</p>
+      <div className="flex gap-4 overflow-x-auto pb-2 min-h-[120px]">
+        {livros && livros.length > 0 ? (
+          livros.map((livro) => (
+            <div
+              key={livro.id}
+              className="w-[140px] lg:w-[180px] flex-shrink-0"
+            >
+              <BookCard {...livro} />
+            </div>
+          ))
+        ) : (
+          <p className="text-text-secondary text-sm self-center">
+            Nenhum livro ainda.
+          </p>
+        )}
       </div>
     </div>
   );
