@@ -8,7 +8,7 @@ const config = createJestConfig({
   transform: {},
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/(.*)$': '<rootDir>/$1',
   },
   coveragePathIgnorePatterns: [
     '/node_modules/',
