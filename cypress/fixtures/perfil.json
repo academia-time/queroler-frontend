@@ -1,0 +1,41 @@
+{
+  "perfilAdministrador": {
+    "email": "administrador@queroler.com",
+    "senha": "Pa55word@?"
+  },
+
+  "perfilModerador": {
+    "email": "moderador@queroler.com",
+    "senha": "Pa55word@?"
+  },
+
+  "perfilLeitor": {
+    "email": "user.sucesso@queroler.com.br",
+    "senha": "Teste123@"
+  },
+
+  "perfilAdministrador2": {
+    "email": "administrador2_teste@queroler.com",
+    "senha": "Pa55word@?"
+  },
+
+  "perfilModerador2": {
+    "email": "moderador2_teste@queroler.com",
+    "senha": "Pa55word@?"
+  },
+
+  "perfilLeitor2": {
+    "email": "leitor@queroler.com",
+    "senha": "Pa55word?"
+  },
+
+  "perfilAdministradorEditado": {
+    "email": "administrador_teste@queroler.com",
+    "senha": "Pa55word@?"
+  },
+
+  "perfilModeradorEditado": {
+    "email": "moderador_teste@queroler.com",
+    "senha": "Pa55word@?"
+  }
+}

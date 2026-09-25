@@ -19,6 +19,8 @@ commit-msg:
 
 pre-push:
   commands:
+    branch-name:
+      run: sh .lefthook/pre-push-branch-name-check.sh
     validate:
       run: npx tsc --noEmit --skipLibCheck
       glob: '*.{ts,tsx}'

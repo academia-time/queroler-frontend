@@ -1,0 +1,13 @@
+{
+  "campoInvalido": {
+    "emailInvalido": "testes@",
+    "emailSemArroba": "testessemarroba.com",
+    "emailMuitoLongo": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@b.com",
+    "senhaCurta": "1234567",
+    "senhaInvalida": "1234567890"
+  },
+  "credenciaisInvalidas": {
+    "email": "usuario.invalido@queroler.com",
+    "senha": "SenhaErrada123"
+  }
+}

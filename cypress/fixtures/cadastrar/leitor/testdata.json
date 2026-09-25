@@ -1,0 +1,18 @@
+{
+  "cadastrarLeitorInvalidos": {
+    "nome": "123 !@#",
+    "email": "teste@queroler.com",
+    "emailNaoCoincidem": "qa@queroler.com",
+    "senhaInvalida": "Teste",
+    "senhaSemCaracteresEspecial": "Teste123",
+    "senhaSemNumero": "Teste!@#",
+    "senhaNaoCoincidem": "Teste123@",
+    "cpfCurto": "789654",
+    "emailInvalido": "testes@"
+  },
+  "usuarioCadastrado": {
+    "email": "qateste@yopmail.com",
+    "cpf": "50636777030",
+    "nomeUsuario": "QA Test"
+  }
+}

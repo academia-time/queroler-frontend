@@ -1,0 +1,9 @@
+{
+  "mensagemToastNoCadastraLivro": {
+    "ISBNNaoEncontrado": "Livro de mesmo ISBN não encontrado. Preencha os dados manualmente.",
+    "registroDeLivroCancelado": "Registro de livro cancelado.",
+    "registroDeLivroSucesso": "Livro criado com sucesso! Redirecionando para tela inicial...",
+    "ISBNJaCadastrado": "ISBN já cadastrado",
+    "ISBNEncontrado": "Livro encontrado! Dados preenchidos automaticamente."
+  }
+}

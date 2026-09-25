@@ -1,0 +1,69 @@
+{
+  "meuPerfil": {
+    "nome": "QA Test",
+    "email": "qateste@yopmail.com",
+    "cpf": "14748258004",
+    "dataDeNascimento": "13/05/1991",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "pais": "Brasil"
+  },
+  "camposDoMeuPerfil": {
+    "nomeCompleto": "Nome completo",
+    "email": "E-mail",
+    "cpf": "CPF",
+    "dataDeNascimento": "Data de nascimento",
+    "cidade": "Cidade",
+    "estado": "Estado",
+    "pais": "País"
+  },
+  "usuarioCadastrado": {
+    "email": "qateste@yopmail.com",
+    "senha": "Teste123@"
+  },
+  "perfilAdministrador2": {
+    "nome": "José da Silva",
+    "email": "administrador2_teste@queroler.com",
+    "cpf": "65986941070",
+    "dataDeNascimento": "13/09/1986",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "pais": "Brasil"
+  },
+  "perfilModerador2": {
+    "nome": "Maria Oliveira",
+    "email": "moderador2_teste@queroler.com",
+    "cpf": "75086970030",
+    "dataDeNascimento": "03/12/1975",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "pais": "Brasil"
+  },
+  "perfilLeitor2": {
+    "nome": "João Leitor",
+    "email": "leitor@queroler.com",
+    "cpf": "35986931090",
+    "dataDeNascimento": "13/09/1986",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "pais": "Brasil"
+  },
+  "perfilAdministradorEditado": {
+    "nome": "José da Silva",
+    "email": "administrador2_teste@queroler.com",
+    "cpf": "65986941070",
+    "dataDeNascimento": "13/09/1986",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "pais": "Brasil"
+  },
+  "perfilModeradorEditado": {
+    "nome": "Maria Oliveira",
+    "email": "moderador2_teste@queroler.com",
+    "cpf": "75086970030",
+    "dataDeNascimento": "03/12/1975",
+    "cidade": "Porto Alegre",
+    "estado": "RS",
+    "pais": "Brasil"
+  }
+}

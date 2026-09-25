@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+:root {
+  /* Cores principais do layout */
+  --color-background: #0c0a15;
+  --color-foreground: #ffffff;
+  --color-brand: #e41b6f;
+  /* Cores de texto */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #94a3b8;
+  --color-text-subtitle: #e4bdc2;
+  /* Cores de status/badges */
+  --color-desired: #ff4e7c;
+  --color-rating: #fffc31;
+  --color-active: #eab308;
+  --color-completed: #10b981;
+  --color-pause: #3b82f6;
+  --color-repeating: #ca4eff;
+  /* Cores de seções */
+  --color-dark-purple: #25213d;
+  --color-card-bg: #0d0b16;
+  --color-border: #2d293d;
+  --color-secondary-bg: #110f1a;
+  /* Cores neutras */
+  --color-white: #ffffff;
+  --color-black: #0c0a15;
+  --color-darker-gray: #2b283a;
+  --color-gray: #687280;
+  --color-input-bg: #0e0d17;
+  --color-placeholder: #3a3744;
+  --color-border-default: #1d1a29;
+  --color-border-hover: #3a3845;
+  --color-search-border: #110f1a;
+
+  /* Button colors for design system */
+  --color-primary-button: #26223e;
+  --color-secondary-button: #201e32;
+}
+@theme inline {
+  --color-background: var(--color-background);
+  --color-secondary-bg: var(--color-secondary-bg);
+  --color-background-input: var(--color-input-bg);
+  --color-placeholder: var(--color-placeholder);
+  --color-primary-button: var(--color-primary-button);
+  --color-secondary-button: var(--color-secondary-button);
+  --color-border-default: var(--color-border-default);
+  --color-brand: var(--color-brand);
+  --color-accent-pink: var(--color-accent-pink);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-desired: var(--color-desired);
+  --color-rating: var(--color-rating);
+  --color-active: var(--color-active);
+  --color-completed: var(--color-completed);
+  --color-repeating: var(--color-repeating);
+  --color-pause: var(--color-pause);
+  --color-dark-purple: var(--color-dark-purple);
+  --color-card-bg: var(--color-card-bg);
+  --color-border: var(--color-border);
+  --color-secondary-bg: var(--color-secondary-bg);
+  --color-border-hover: var(--color-border-hover);
+  --color-text-subtitle: var(--color-text-subtitle);
+  --color-darker-gray: var(--color-darker-gray);
+  --color-search-border: var(--color-search-border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+@media (prefers-color-scheme: dark) {
+}
+body {
+  color: var(--color-foreground);
+  font-family: 'Plus Jakarta Sans', var(--font-layout-display), sans-serif;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 99px;
+}
+
+/* Esconde a barra de rolagem mas mantém o scroll */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
+}

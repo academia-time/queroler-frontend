@@ -1,0 +1,39 @@
+{
+  "mensagemToastNoCadastraLivro": {
+    "ISBNNaoEncontrado": "Livro de mesmo ISBN não encontrado. Preencha os dados manualmente.",
+    "registroDeLivroCancelado": "Registro de livro cancelado.",
+    "registroDeLivroSucesso": "Livro criado com sucesso! Redirecionando para tela inicial...",
+    "ISBNJaCadastrado": "ISBN já cadastrado",
+    "ISBNEncontrado": "Livro encontrado! Dados preenchidos automaticamente."
+  },
+  "avisoErro": {
+    "imagemMaiorQue10MB": "Tamanho máximo de 10MB permitido",
+    "campoAutorNaoDeveConterNumerosEEspeciais": "O campo não deve conter números ou caracteres especiais (exceto vírgula)",
+    "isbnDeveConterApenasNumeros": "O ISBN deve conter apenas números (sem letras ou caracteres especiais)",
+    "anoPublicacaoNaoPodeMaiorQueAtual": "O ano de publicação não pode ser maior que o ano atual (2026)",
+    "anoPublicacaoDeveConterApenasNumeros": "O ano de publicação deve conter apenas números",
+    "anoPublicacaoDeveTer4Digitos": "Ano de publicação deve ter exatamente 4 números",
+    "numeroDePaginasDeveConterApenasNumeros": "Número de páginas deve ter apenas números",
+    "formatoArquivoInvalido": "Apenas formatos .jpg, .jpeg, e .png são suportados"
+  },
+  "campoObrigatorioCadastrarLivro": {
+    "ISBNObrigatorio": "ISBN obrigatório",
+    "tituloObrigatorio": "Título obrigatório",
+    "autorObrigatorio": "Autores é obrigatório",
+    "editoraObrigatoria": "Editora obrigatória",
+    "anoPublicacaoObrigatorio": "Ano de publicação deve ter exatamente 4 números",
+    "numeroDePaginasObrigatorio": "O número de páginas deve ser maior que 0",
+    "sinopseObrigatorio": "Sinopse deve ter 50 caracteres no mínimo"
+  },
+  "labelsCadastrarLivro": {
+    "isbn": "ISBN",
+    "tituloDoLivro": "Título do livro",
+    "autores": "Autor(es)",
+    "editora": "Editora",
+    "anoDePublicacao": "Ano de Publicação",
+    "numeroDePaginas": "Número de Páginas",
+    "idioma": "Idioma",
+    "sinopse": "Sinopse",
+    "capaDoLivro": "Capa do livro"
+  }
+}

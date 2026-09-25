@@ -1,0 +1,6 @@
+{
+  "mensagemToast": {
+    "toastLoginSucesso": "Login realizado com sucesso.",
+    "toastLogoutSucesso": "Realizando logout..."
+  }
+}

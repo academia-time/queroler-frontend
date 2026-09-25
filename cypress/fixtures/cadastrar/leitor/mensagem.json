@@ -1,0 +1,43 @@
+{
+  "campoInvalidoLabel": {
+    "campoNomeInvalido": "O nome não deve conter números ou caracteres especiais",
+    "emailInvalido": "E-mail inválido",
+    "emailsNaoCoincidem": "mails não coincidem",
+    "cpfInvalido": "CPF incompleto ou inválido",
+    "senhaMinimoCaracteres": "Mínimo 8 caracteres",
+    "senhaDeveConterCaractereEspecial": "A senha deve conter pelo menos um caractere especial.",
+    "senhaDeveConterNumero": "A senha deve conter pelo menos um número.",
+    "senhasNaoCoincidem": "As senhas não coincidem"
+  },
+  "dadosJaCadastrado": {
+    "cpfJaCadastrado": "CPF já cadastrado.",
+    "emailJaCadastrado": "já está cadastrado"
+  },
+  "cadastradoComSucesso": {
+    "usuarioCadastradoSucesso": "Usuário criado com sucesso! Redirecionando para login..."
+  },
+  "campoObrigatorioNoCadastrarLeitor": {
+    "nomeObrigatorio": "Nome deve ter no mínimo 3 caracteres",
+    "emailObrigatorio": "E-mail obrigatório",
+    "confirmacaoEmailObrigatoria": "Confirmação de e-mail obrigatória",
+    "senhaObrigatoria": "Senha obrigatória",
+    "confirmacaoSenhaObrigatoria": "Confirmação obrigatória",
+    "cpfObrigatorio": "CPF obrigatório",
+    "dataNascimentoObrigatoria": "Data inválida",
+    "termosObrigatorio": "É necessário aceitar os termos"
+  },
+  "labelsCadastrarLeitor": {
+    "nome": "Nome",
+    "cpf": "CPF",
+    "email": "Email",
+    "confirmarEmail": "Confirmar E-mail",
+    "senha": "Senha",
+    "confirmarSenha": "Confirmar Senha",
+    "dataDeNascimento": "Data de Nascimento"
+  },
+  "termosEPolitica": {
+    "concordaComOsTermos": "Ao continuar você concorda com os",
+    "termosDeServico": "Termos de Serviço",
+    "politicaDePrivacidade": "Política de Privacidade"
+  }
+}

@@ -41,6 +41,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# allure
 allure-results/
 allure-report/
+
+# cypress
 cypress.env.json
+**/screenshots/
+
+# fixtures images
+cypress/fixtures/imagens
+
+# fixtures documentos
+cypress/fixtures/arquivos

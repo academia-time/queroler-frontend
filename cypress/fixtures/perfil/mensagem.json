@@ -1,0 +1,14 @@
+{
+  "meuPerfil": {
+    "tituloPagina": "Meu perfil"
+  },
+  "cadastradoComSucesso": {
+    "usuarioCadastradoSucesso": "Usuário criado com sucesso! Redirecionando para login..."
+  },
+  "excluirPerfil": {
+    "tituloModal": "Excluir perfil",
+    "mensagemModal": "Ao excluir o seu perfil do Quero Ler todas as suas informações serão perdidas. Confirma a exclusão do seu perfil no Quero Ler?",
+    "botaoNao": "Não",
+    "botaoConfirmar": "Sim, excluir perfil"
+  }
+}

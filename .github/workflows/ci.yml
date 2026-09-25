@@ -39,5 +39,13 @@ jobs:
             "user_email": "${{ secrets.CYPRESS_user_email }}",
             "user_senha": "${{ secrets.CYPRESS_user_senha }}"
           }' > cypress.env.json
+
       - name: Rodar testes Cypress
         run: npm run test:e2e:all
+
+      - name: Disparar Deploy no Render (Apenas na develop)
+        if: github.ref == 'refs/heads/develop' && github.event_name == 'push'
+        run: |
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_DEV }}"
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_STG }}"
+          

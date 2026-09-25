@@ -1,0 +1,13 @@
+{
+  "mensagemToast": {
+    "toastLoginSucesso": "Login realizado com sucesso.",
+    "toastLogoutSucesso": "Realizando logout..."
+  },
+  "campoLogin": {
+    "emailObrigatorio": "E-mail obrigatório",
+    "emailInvalido": "E-mail inválido",
+    "emailMuitoLongo": "Máximo de 256 caracteres",
+    "senhaMinimaObrigatoria": "Mínimo 8 caracteres",
+    "senhaMuitoCurta": "Mínimo 8 caracteres"
+  }
+}
